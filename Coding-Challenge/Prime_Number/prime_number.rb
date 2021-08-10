@@ -54,7 +54,7 @@ end
 def is_prime_recursion(item, number)
 
   puts "#{item} : #{number}"
-  
+
   return false if item == 1
   return true if number == 1 # when there is not any number that can divide item
 
@@ -67,7 +67,7 @@ def sum_prime_number(array)
   array.select { |item| is_prime(item) }.reduce(:+)
 end
 
-array = [1, 2, 3, 4, 5]
+array = [1, 2, 3, 4, 5, 7]
 # puts count_prime_number(array)
 # count_prime_number_recursion(array)
 puts sum_prime_number(array)
