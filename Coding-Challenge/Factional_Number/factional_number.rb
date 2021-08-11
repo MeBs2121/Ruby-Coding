@@ -24,5 +24,11 @@ end
 def factional_v3(number)
   number.downto(1).reduce(:*)
 end
+# puts factional_v3(5)
 
-puts factional_v3(5)
+# No.4
+def factional_v4(number)
+  number == 0 ? 1 : number * factional_v4(number - 1)
+end
+
+puts factional_v4(5)
